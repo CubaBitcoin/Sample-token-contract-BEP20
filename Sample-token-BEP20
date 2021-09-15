@@ -11,7 +11,7 @@ pragma solidity ^0.4.24;
 //
 // Enjoy.
 //
-// (c) by ActiviCoin 2021.
+// (c) by CubaBitcoin 2021.
 // ----------------------------------------------------------------------------
 
 
@@ -43,10 +43,10 @@ contract SafeMath {
 
 
 /**
-ERC Token Standard #20 Interface
-https://github.com/CubaBitcoin/Sample-token-contract-BEP20/new/main
+BEP Token Standard #20 Interface
+https://github.com/CubaBitcoin/Sample-token-contract-BEP20/blob/main/Sample-token-BEP20
 */
-contract ERC20Interface {
+contract BEP20Interface {
     function totalSupply() public constant returns (uint);
     function balanceOf(address tokenOwner) public constant returns (uint balance);
     function allowance(address tokenOwner, address spender) public constant returns (uint remaining);
@@ -68,7 +68,7 @@ contract ApproveAndCallFallBack {
 }
 
 /**
-ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
+BEP20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
 contract ATCToken is ERC20Interface, SafeMath {
     string public symbol;
@@ -126,7 +126,7 @@ contract ATCToken is ERC20Interface, SafeMath {
     // Token owner can approve for spender to transferFrom(...) tokens
     // from the token owner's account
     //
-    // https://github.com/CubaBitcoin/Sample-token-contract-BEP20/new/main
+    // https://github.com/CubaBitcoin/Sample-token-contract-BEP20/blob/main/Sample-token-BEP20
     // recommends that there are no checks for the approval double-spend attack
     // as this should be implemented in user interfaces 
     // ------------------------------------------------------------------------
